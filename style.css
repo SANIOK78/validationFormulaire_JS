@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color-first: #08b15c;
+    --color-second: #dbd9d9;
+    --color-white: #fff;
+    --color-success: #2ecc71;
+    --color-erreur: #f84d4d;
+}
+body{
+    /* background: var(--color-first); */
+    font-family: Verdana, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin:0px;
+    overflow: hidden;
+}
+.container{
+    border-radius: 8px;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.6);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    width: 400px;
+}
+.header{
+    background-color: #f7f7f7;
+    text-align: center;
+}
+h2{
+    font-size: 26px;
+    padding: 15px 0px;
+    margin: 0px;    
+}
+.form{
+    padding: 30px ;
+}
+.form-control{
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid var(--color-second);
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+.form-control i {
+    position: absolute;
+    top:33px;
+    right: 10px;
+    visibility: hidden;
+}
+.form-control small{
+    position: absolute;
+    /* bottom: 0px; */
+    left: 0px;
+    /* visibility: hidden; */
+}
+.form button {
+    background: var(--color-first);
+    color: white;
+    display: block;
+    border: 2px solid var(--color-first);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px 0px;
+    width: 100%;
+} 
+.form-control.success input{
+    border-color: var(--color-success);
+}
+.form-control.erreur input{
+    border-color: var(--color-erreur);
+}
+.form-control.success i.fa-check-circle{
+    color: var(--color-success);
+    visibility: visible;
+}
+.form-control.erreur i.fa-exclamation{
+    color: var(--color-erreur);
+    visibility: visible;
+}
+.form-control.erreur small{
+    color: var(--color-erreur);
+    visibility: visible;
+}
+.form-control.success small{
+    color: var(--color-success);
+    visibility: visible;
+}

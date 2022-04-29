@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Géstion de formulaire avec JavaScript</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+        crossorigin="anonymous">
+    </head>
+
+    <body>
+       
+        <div class="container">
+            <div class="header">
+                
+                <h2>Créer un compte</h2>
+            </div>
+            <form class="form" id="form" method="POST" action="">
+
+                <div  class="form-control " >
+                    <label for="username">Nom d'utilisateur</label><br>
+                    <input type="text" id="username" name="username" placeholder="Ronasdev" />
+                    <i class="fas fa-exclamation"></i>
+                    <i class="fas fa-check-circle"></i>                   
+                    <small class="errer">Message erreur</small>
+                </div> 
+
+                <div class="form-control " >
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="ronasdev@gmail.com"/>
+                    <i class="fas fa-exclamation"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small class="errer">Message erreur</small>
+                </div>  
+
+                <div  class="form-control" >
+                    <label for="password">Mot de passe</label><br>
+                    <input type="password" id="password" name="password" />
+                    <i class="fas fa-exclamation"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small class="errer">Message erreur</small>
+                </div>
+
+                <div  class="form-control" >
+                    <label for="password2">Confirmation de mot de passe</label><br>
+                    <input type="password" id="password2" name="password" />
+                    <i class="fas fa-exclamation"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small class="errer">Message erreur</small>
+                </div>    
+
+                <button type="submit" class="btn">
+                    <i class="fas fa-user-plus">  S'inscrir</i>
+                </button> 
+                
+            </form>
+        </div>
+    </body>
+
+  
