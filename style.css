@@ -66,9 +66,9 @@ h2{
 }
 .form-control small{
     position: absolute;
-    /* bottom: 0px; */
+    bottom: 0px;
     left: 0px;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .form button {
     background: var(--color-first);
